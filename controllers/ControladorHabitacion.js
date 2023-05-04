@@ -6,7 +6,7 @@ export class ControladorHabitaciones{
 
     async registrandoHabitacion(peticion,respuesta){
         let datosHabitacion=peticion.body
-        let servicioHabitacion=new ServicioHabitaciones()
+        let servicioHabitacion = new ServicioHabitaciones()
         try{
 
             if(datosHabitacion.precioNoche < 100 && datosHabitacion.cantidadMaxima < 2) {
